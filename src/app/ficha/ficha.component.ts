@@ -13,7 +13,7 @@ export class FichaJugadorComponent implements OnInit {
 
   ngOnInit(): void {
     this.rutaActiva.params.subscribe((params: Params) => {
-      const nombre = params.nombre.toString();
+      const nombre = params['nombre'].toString();
 
       if (nombre === 'oliver-atom') {
         this.jugador = 'El gran Oliver Atom';
